@@ -5,11 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Assignment extends Model
+class Project extends Model
 {
-    public function complete()
-    {
-        $this->completed = true;
-        $this->save();
-    }
+    use HasFactory;
 }
